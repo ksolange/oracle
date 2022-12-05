@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!=   Edades</title>
+</head>
+<body>
+    <p>¨Nuestra diferencia de edad es¨, concatenando el resultado de la diferencia de tu edad con la de tu hermano (o de un amigo). La respuesta puede dar negativa, sin duda. No olvides de usar las funciones saltarLinea e imprimir y de incluir la etiqueta <meta> para resolver problemas de acentuación. No necesitas enviar la respuesta, solo basta crear un programa, probar y verificar si todo funciona. ¡Si tienes alguna duda no dejes de postearla en el foro!</p>
+
+    <script>
+        function diferenciaEdades(edad1,edad2){
+            diferencia = edadMayor - edadMenor;
+            return(diferencia);
+            jumpLine();
+        }
+
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            document.write(frase)
+        }
+    
+        var edadMayor = 31;
+        var edadMenor = 29;
+        imprimir("la primera edad registrada es: "+ edadMayor + ", la segunda edad registrada es: " + edadMenor + ", por ende la diferencia entre estas edades es de: " + diferenciaEdades());
+        jumpLine();
+        imprimir("el resultado es: "+ (diferenciaEdades()));
+    </script>
+    
+</body>
+</html>

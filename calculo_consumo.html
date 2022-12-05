@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle programación</title>
+</head>
+<body>
+    <h3>¿Alcohol o gasolina?</h3>
+    <p> Problema: Si un carro tiene un tanque de 40 litros. Usando gasolina y consumiendo todo el tanque se hace un recorrido de 480 kilómetros. ¿Cuál es la eficiencia del carro usando gasolina? o sea, ¿cuántos kilómetros recorre el carro por cada litro de gasolina? Para calcular la eficiencia: divide la distancia recorrida entre la cantidad de litros gastados. Imprime el valor utilizando document.write. Organiza las cuentas en variables.
+
+    Por otro lado, si el carro usa alcohol como combustible, el mismo tanque de 40 litros hace un recorrido de 300 kilómetros. ¿Cuál es el la eficiencia del carro usando alcohol?</p>
+    
+    <script>
+        function jumpLine () {
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+        }
+
+        function imprimir (frase) {
+            document.write(frase);
+            jumpLine();
+        }
+
+        var tanque = 40;
+        var recorridoGasolina = 480;
+        var respuestaGasolina = 0;
+
+        var recorridoAlcohol = 300;
+        var respuestaAlcohol = 0;
+
+        var saltoLinea = ("<br><br>")
+
+        document.write(saltoLinea);
+        document.write(" el carro tiene un tanque de " + tanque + " litos usando gasolina y consumo total del tanque hace un recorrido de " + recorridoGasolina + " km");
+       
+        respuestaGasolina = recorridoGasolina / tanque ;
+        
+        document.write(" ¿cuántos kilómetros recorre el carro por cada litro de gasolina?, la respuesta es: " + respuestaGasolina + " km/litros" );
+
+        document.write(saltoLinea);
+        
+        document.write("Con funciones:::::::::");
+        jumpLine();
+
+        imprimir(" el carro usando alcohol como combustible con un tanque de " + tanque + " litos con un recorrido de " + recorridoAlcohol + " km");
+     
+        respuestaAlcohol = recorridoAlcohol / tanque;
+        
+        imprimir(" ¿Cuál es el la eficiencia del carro usando alcohol?, la respuesta es: " + respuestaAlcohol + " km/litros");
+
+
+        imprimir("probando lo aprendido con dos funciones, imprimir llama jumpLine")
+    </script>
+
+
+</body>
+</html>

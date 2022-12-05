@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indíce de masa corporal</title>
+</head>
+<body>
+    <h1>IMC indíce de masa corporal</h1>
+
+    <script>
+        
+        function calcularImc(peso, altura){
+            imc = peso / (altura)**2; 
+            return(imc);
+        }
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+        
+        var peso = 49;
+        var altura = 1.58;
+        imcPaciente = calcularImc(peso,altura);
+
+        imprimir("los datos del paciente son, " + peso + " kg " + altura + " cm");
+        jumpLine();
+        imprimir("El IMC del paciente es: " + Math.round((imcPaciente)));
+        jumpLine();
+
+        
+    </script>
+    
+</body>
+</html>

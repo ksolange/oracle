@@ -1,0 +1,28 @@
+one - oracle 
+pulse: define estrategias. 1. logra tener visibilidad profesional y 2 fortalece tu atoridad en el área. Publica 1ro en tu blog y después de una semana vuelve a publicarlo en pulse de delind. frecuencia d publicación. con el calendario.
+linkedln no es estático, repositorio de curriculum.
+url hasta el / del .com  (url/ssi) con esto sé los estandares de vistas de mi pérfil 
+_______lógica de programación: primeros pasos: aula 1
+* F12 o “CTRL + SHIFT + i” para abrir la ventana de herramientas del desarrollador (DevTools). En el navegador CRTL + O (para abrir una ventana de htlm)
+* Todo navegador (o browser, en inglés) logra leer y entender HTML que es el lenguaje utilizado para la presentación de datos e informaciones.
+
+*  la instrucción document.write está entre () el texto: "Estoy escribiendo desde el mundo JavaScript en el mundo HTML". Cuando usamos document.write, dentro del script, en realidad estamos escribiendo en el mundo HTML, es decir, lo que veremos es un resultado HTML.
+	La ventaja es que con el document.write podemos pasar al resultado de un cálculo y, entre otras cosas, de manera dinámica ya que el mundo HTML no es capaz de realizar operaciones matemáticas. <meta charset="UTF-8">
+<script>
+    document.write(10 + 20);
+</script>
+------ resultado 30
+	<meta charset="UTF-8">
+<script>
+    document.write("<h1>Sea bienvenido</h1>");
+</script>		 escribiendo en el mundo JavaScript y pasando al mundo HTML el texto "<h1>Sea bienvenido</h1>". Si este código forma parte del mundo HTML, el navegador va a interpretarlo como HTML y va a colocar el texto resaltado, pues estamos usando la etiqueta <h1>. 
+
+
+______ <hr>
+representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección).
+
+_____ <big>
+
+
+
+____ prompt : es = input pero con un cuadro pequeño de alert q recibe la info 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio IMC Pacientes</title>
+</head>
+<body>
+    <h1>Promedio imc</h1>
+    <p>Indíce de masa corporal con promedio</p>
+    <script>
+        function calcularImc(peso, altura){ 
+            return(peso / (altura)**2);
+        }
+        /*function promedioImc(imc1,imc2){
+            return (Math.round((imc1 + imc2) / 2));
+        }*/
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+
+        imprimir("el imc entre Sol y Andre es " + (Math.round(calcularImc(50,1.58) + calcularImc(46, 1.50))) + " promedio " + (Math.round(calcularImc(50,1.58) + calcularImc(46, 1.50))/2));
+        jumpLine();
+        
+        nombre = prompt("Ingrese su nombre");
+        pesoIngresado = prompt(nombre + ", escriba su peso");
+        alturaIngresada = prompt(nombre + ", escriba su altura, ejemplo 1.50");
+        
+        imcIngresado = calcularImc(pesoIngresado, alturaIngresada);
+        imprimir("los datos del paciente " + nombre + " son, " + pesoIngresado + " kg " + alturaIngresada + " cm, su imc obtenido es: " + Math.round(imcIngresado));
+        jumpLine();
+
+    </script>
+    
+</body>
+</html>
