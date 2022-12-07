@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotería</title>
+</head>
+<body>
+    <h1>Gana con la lotería</h1>
+    <script>
+
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+        
+        var numeroPensado = sorteo(10);
+        var numeroDado = parseInt(prompt("Ingresa un número entre 0 - 10"));
+        
+        function sorteo(n){
+            return (parseInt(Math.round(Math.random()*n)));
+        }
+        
+        function adivinar(a,b) {
+            if(numeroPensado == numeroDado){
+                imprimir("Adivinaste");
+            }
+            else {
+                if(numeroPensado > numeroDado){
+                imprimir("Te equivocaste, el número digitado es menor al agregado " + numeroDado);
+                }
+                else {
+                    imprimir("El número es mayor al digitado " + numeroDado );
+                }
+            }
+        }
+            
+        adivinar(numeroPensado, numeroDado);
+        imprimir("numero pensado es: " + numeroPensado + ", el número dado fue: " + numeroDado);
+
+    </script>
+</body>
+</html>

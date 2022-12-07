@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinanzas</title>
+</head>
+<body>
+    
+    <script>
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+
+        var numeroPensado = parseInt(Math.random()* 10);
+        var numeroDado = parseInt(prompt("Ingresa un número entre 0 - 10"));
+
+        function adivinar(a,b){
+            if(a == b){
+                imprimir("Adivinaste");
+            }
+            else if(a != b){
+                imprimir("Te equivocaste, el número era " + a);
+            }
+            return (a,b);
+        }
+
+        /*while( numeroDado >= 0 && c <= 10){
+            imprimir("El número registrado fue: " + numeroDado);
+        }
+        return("El número no cumple la condición, intente de nuevo");
+       */
+        adivinar(numeroPensado, numeroDado);
+        imprimir("numero pensado es: " + numeroPensado + ", el número dado fue: " + numeroDado);
+        
+
+    </script>
+    
+</body>
+</html>

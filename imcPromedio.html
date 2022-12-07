@@ -29,13 +29,50 @@
         jumpLine();
         
         nombre = prompt("Ingrese su nombre");
-        pesoIngresado = prompt(nombre + ", escriba su peso");
-        alturaIngresada = prompt(nombre + ", escriba su altura, ejemplo 1.50");
+        pesoIngresado = parseFloat(prompt(nombre + ", escriba su peso"));
+        alturaIngresada = parseFloat(prompt(nombre + ", escriba su altura, ejemplo 1.50"));
         
         imcIngresado = calcularImc(pesoIngresado, alturaIngresada);
         imprimir("los datos del paciente " + nombre + " son, " + pesoIngresado + " kg " + alturaIngresada + " cm, su imc obtenido es: " + Math.round(imcIngresado));
+
+        imcDecimal = imcIngresado.toFixed(2);
         jumpLine();
 
+        imprimir("Clasificación del IMC");
+        imprimir("Insuficiencia ponderal ---> <  18.5");
+        imprimir("Intervalo normal       --->    18.5 - 24.9");
+        imprimir("Sobrepeso              ---> >= 25.0");
+        imprimir("Preobesidad            --->    25.0 - 29.9");
+        imprimir("Obesidad               ---> >= 30.0");
+        imprimir("Obesidad de clase I    --->    30.0 - 34.9");
+        imprimir("Obesidad de clase II   --->   35.0 - 39.9");
+        imprimir("Obesidad de clase III  ---> >= 40.0");
+
+        jumpLine();
+
+        if(imcDecimal < 18.5){
+            imprimir("Insuficiencia ponderal ");
+        }
+        else if(imcDecimal >= 18.5 && imcDecimal < 24.9){
+            imprimir("Intervalo normal ");
+        }
+        else if(imcDecimal >= 25.0 ){
+            imprimir(" cuidado pasas la talla del sobrepeso ");
+            if(imcDecimal < 29.9){
+                imprimir("Preobesidad");
+            }
+            else if(imcDecimal >= 30.0 && imcDecimal < 34){
+                imprimir("Obesidad ");
+            }
+            else if(imcDecimal >= 30.0 && imcDecimal < 34.9){
+                imprimir("Obesidad de clase I");
+            }
+            else if(imcDecimal >= 35.0 && imcDecimal < 39.9){
+                imprimir("Obesidad de clase II");
+            }
+            else(imprimir("Obesidad de clase III"))
+        }
+                
     </script>
     
 </body>
