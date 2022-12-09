@@ -27,11 +27,11 @@
         }
         
         function adivinar(a,b) {
-            if(numeroPensado == numeroDado){
+            if(a == b){
                 imprimir("Adivinaste");
             }
             else {
-                if(numeroPensado > numeroDado){
+                if(a > b){
                 imprimir("Te equivocaste, el número digitado es menor al agregado " + numeroDado);
                 }
                 else {

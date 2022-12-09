@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad porcentajes</title>
+</head>
+<body>
+    <h1>EDADES y PROMEDIO</h1>
+    <script>
+
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+
+        var integrantes = prompt("Digite la cantidad de personas que componen su familia");
+        
+        var ninos = parseInt(prompt("Digite el número de hijos que conforman la familia"));
+        
+        contador = ninos;
+        while(ninos != 0){
+            n1 = prompt("Digite la edad del primer hijo");
+            
+            contador = -1 ;
+            if(ninos > 1 && ninos < contador){
+                n2 = prompt("Digite la edad del hijo"); 
+                contador = -1;
+            }else{imprimir("ya no existe más hijos que agregar");
+            } 
+            break
+        }
+
+        var mama = parseInt(prompt("Digite la edad de la madre"));
+        
+        var papa = parseInt(prompt("Digite la edad del padre"));
+
+        acumulado = parseInt(mama + papa + ninos)/integrantes;
+        jumpLine();
+        imprimir("los resultados son " + promedio(mama, papa, ninos));
+
+    </script>
+    
+</body>
+</html>

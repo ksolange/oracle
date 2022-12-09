@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial</title>
+</head>
+<body>
+    <h1>Mundiales de la historia</h1>
+    <script>
+
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+        
+        var incioMundial = 1930;
+        var dado = anoDado(2022);
+        
+        function anoDado(a){
+            return(parseInt(prompt("Ingresa hasta que año quieres saber del mundial")));
+        }
+        //function mundial(a,b) {
+            while(incioMundial < dado){
+                imprimir("Hubo mundial Fifa desde el año " + incioMundial);
+                jumpLine();
+                incioMundial = incioMundial + 4 ;
+                //return resultado;
+                imprimir(incioMundial);
+                jumpLine();
+            }
+        //}
+            
+        //mundial(incioMundial, anoDado);
+        imprimir("fin");
+    </script>
+</body>
+</html>

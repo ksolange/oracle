@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números del 1 al 100</title>
+</head>
+<body>
+    <h1>Números del 1 al 100</h1>
+
+    <p>imprime todos los números pares del 1 al 100 y al final imprime la palabra "FIN"</p>
+    <script>
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+        contador = 2
+        while(contador <= 100){
+            imprimir("el resultado es: " + contador);
+            contador += 2 ;
+        }
+
+        imprimir("el resultado es -->: " + contador);
+        imprimir("FIn");
+
+        
+        for(var conta = 2; conta <= 100; conta += 2){
+            imprimir("el resultado es: " + conta);
+        }
+
+        imprimir("el resultado es -->: " + conta);
+        imprimir("FIn");
+        
+    </script>
+    
+</body>
+</html>

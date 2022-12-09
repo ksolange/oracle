@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila y columnas de estrella ***</title>
+</head>
+<body>
+    <h1>Fila | columnas ***</h1>
+    <script>
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+
+        for(var linea = 1; linea <= 3; linea ++){
+            jumpLine();
+            imprimir("línea columna"); // for anidados
+            for(var columna = 1; columna <= 10; columna++){
+                document.write("-*-");
+            }
+            jumpLine();
+        }
+
+        
+        imprimir("Acabado");
+    </script>
+    
+</body>
+</html>

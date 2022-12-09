@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanzado</title>
+</head>
+<body>
+    <h1>Adivinanza avanzada</h1>
+    <script>
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+
+        var numeroPensado = parseInt(Math.random()* 10);
+                
+        var intentos = 3;
+        var contador = 1;
+        while(contador <= intentos){
+            var numeroDado = parseInt(prompt("Ingresa un número entre 0 - 10"));
+            if(numeroPensado == numeroDado){
+                alert("Adivinaste, en el intento " + contador + " el número pensado era " + numeroPensado);
+                break;
+            }
+            else {
+                alert("Te equivocaste");
+            }
+            contador ++ ; 
+        }
+
+        if(numeroPensado == numeroDado){
+            imprimir("Adivinaste, en el intento " + contador + " el número pensado era " + numeroPensado);
+        }
+        else {
+            imprimir("Te equivocaste" );
+        }
+        
+        alert("Intento " + contador + " el número pensado era " + numeroPensado);
+        imprimir("numero pensado es: " + numeroPensado + ", el número dado fue: " + numeroDado);
+        
+
+    </script>
+</body>
+</html>

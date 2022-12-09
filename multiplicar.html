@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicación</title>
+</head>
+<body>
+    <h1>Tablas de Multiplicación</h1>
+    <script>
+
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+
+        var multiplicacion = 1 ;
+
+        imprimir("while");
+        jumpLine();
+        while(multiplicacion <= 10){
+            imprimir("la multiplicación de " + multiplicacion+ " * "+ 5 + " es " + 5 * multiplicacion );
+            multiplicacion ++ ;
+        }
+
+        jumpLine();
+        imprimir("for");
+        jumpLine();
+        for(var i = 1; i <= 10; i++){
+            imprimir("la multiplicación de " + i + " * "+ 10 + " es " + 10 * i );
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -24,5 +24,8 @@ representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena e
 _____ <big>
 
 
+-------loops
+repeticiones de código en función a una condición 
+
 
 ____ prompt : es = input pero con un cuadro pequeño de alert q recibe la info 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión</title>
+</head>
+<body>
+    <script>
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+
+        var inicioSesion = "alura";
+        var contrasena = "alura321";
+        
+        var intentos = 3;
+        var contador = 1;
+
+        while(contador <= intentos){
+            var inicioSesion = prompt("Ingrese su usuario");
+            var contrasena = prompt("Ingrese su contraseña");
+            if(inicioSesion == inicioSesion && contrasena == contrasena) {
+                alert("Bienvenido al sistema " + inicioSesion);
+                //acumulado = contador;
+                break;
+            } else {
+                alert("inicio de sesión inválido. Favor intente de nuevo");
+                if(intentoActual == maximoIntentos) {
+                     alert("Agotaste el número de intentos")
+                }
+            }
+            contador ++;
+        }
+
+        imprimir("Acabado");
+    </script>
+    
+</body>
+</html>

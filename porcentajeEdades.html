@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edades</title>
+</head>
+<body>
+    <h1>PROMEDIO CON EDADES</h1>
+    <script>
+
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+
+        var integrantes = prompt("Digite la cantidad de personas que componen su familia");
+        var contador = 1;
+        var acumulado = 0;
+        while(contador <= integrantes){
+            edad = parseInt(prompt("ingrese edad del integrante"));
+            acumulado = acumulado + edad;
+            contador ++;            
+        }
+        
+        promedio = acumulado / integrantes;
+        jumpLine();
+        imprimir("el promedio familiar es " + promedio);
+        jumpLine();
+        imprimir("Fin");
+    </script>
+    
+</body>
+</html>
