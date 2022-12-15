@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Canvas</title>
+</head>
+
+<body>
+    <canvas 
+    width = "600" height= "400">
+    </canvas>
+    <h1>Inicio Canvas con Html</h1>
+    <script>
+        var pantalla = document.querySelector("canvas") ;
+        var pincel = pantalla.getContext("2d"); // dimensiones
+
+        pincel.fillStyle = "lightblue";  // PROPIEDAD para definir el color
+        pincel.fillRect(0, 0, 600, 400); // FUNCIÓNfill para llenar Rect de rectángulo, (tiene 4 parámetros (pensar en un plano cartesiano x, y, (600 plano horizontal), (400 plano vertical))) 
+
+        pincel.fillStyle = "green";
+        pincel.fillRect(0, 0, 200, 400);
+
+        pincel.fillStyle = "violet";
+        pincel.fillRect(400, 0, 200, 400);
+
+        pincel.fillStyle = "yellow";
+        pincel.beginPath(); // empezar camino
+        pincel.moveTo(300, 200);
+        pincel.lineTo(200, 400);
+        pincel.lineTo(400, 400);
+        pincel.fill();
+
+        pincel.fillStyle = "red";
+        pincel.beginPath();
+        pincel.arc(300, 200, 50, 0, 2 * 3.14); // el arco/ circunferencia, 4 parámetros los dos primeros posición inicial, 3 radio circunferencia, 4to y 5to ángulo ° inicial y ° ángulo final
+        pincel.fill();
+    </script>
+
+</body>
+</html>

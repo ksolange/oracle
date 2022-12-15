@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+</head>
+<body>
+    <h1>Creeper</h1>
+    <canvas
+        width = "600" height = "400">
+    </canvas>
+    <script>
+        var pantalla = document.querySelector("canvas") ;
+        var pincel = pantalla.getContext("2d"); 
+        
+        pincel.fillStyle = "darkgreen";  // 1er rectángulo 600 / 3 = 200 
+        pincel.fillRect(200, 50, 350, 300); 
+        
+        pincel.fillStyle = "black";  // 2do rectángulo
+        pincel.fillRect(410, 110, 90, 90);
+        
+        pincel.fillStyle = "black";  // 3er rectángulo
+        pincel.fillRect(250, 110, 90, 90);
+        
+        pincel.fillStyle = "black";  // 4to rectángulo, 340 es por la suma 250 + 90, 200= 110 + 90
+        pincel.fillRect(340, 200, 70, 100);
+        
+        pincel.fillStyle = "black";  // 5to rectángulo 340 + 70 = 410 
+        pincel.fillRect(410, 240, 40, 110);
+
+        pincel.fillStyle = "black";  // 6to rectángulo 340 - 40 = 300, 
+        pincel.fillRect(300, 240, 40, 110);
+    </script>
+    
+</body>
+</html>

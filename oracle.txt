@@ -28,4 +28,9 @@ _____ <big>
 repeticiones de código en función a una condición 
 
 
-____ prompt : es = input pero con un cuadro pequeño de alert q recibe la info 
+____ prompt : es = input pero con un cuadro pequeño de alert q recibe la info
+
+
+--------------------------------- canva 2d
+https://developer.mozilla.org/es/docs/Web/API/Canvas_API 
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
