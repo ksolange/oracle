@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circunferencia</title>
+</head>
+<body>
+    <h1>Flores con canvas </h1>  
+    <canvas
+        width= "600" height= "400">
+    </canvas> 
+    <p>Uso canvas para circunferencias</p> 
+    <script>
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "lightgray";
+        pincel.fillRect(0, 0, 600, 400);
+
+        function dibujarCirculo(x, y, radio, color) {
+
+            pincel.fillStyle = color;
+            pincel.beginPath();
+            pincel.arc(x, y, radio, 0, 40 * 3.14);
+            pincel.fill();
+        }
+        /*for(var x = 0; x < 240; x = x + 50){
+            dibujarCirculo(0, x, "green");
+            dibujarCirculo(50, x, "white");
+            dibujarCirculo(100, x, "red");
+            for(var y = 0; y < 340; y = y + 50){
+
+            }
+        }*/
+        function dibujarFlor(x, y){
+            dibujarCirculo(x, y + 40, 10, "darkred");
+            dibujarCirculo(x, y + 20, 10, "red");
+            dibujarCirculo(x, y, 10, "yellow");
+            dibujarCirculo(x - 20, y - 20, 10, "darkyellow");
+            dibujarCirculo(x + 20, y + 20, 10, "darkyellow");
+            dibujarCirculo(x + 20, y - 20, 10, "darkyellow");
+            dibujarCirculo(x - 20, y + 20, 10, "darkyellow");
+            dibujarCirculo(x, y - 20, 10, "red");
+            dibujarCirculo(x, y - 40, 10, "darkred");
+            dibujarCirculo(x - 20, y, 10, "red");
+            dibujarCirculo(x - 40, y, 10, "darkred");
+            dibujarCirculo(x + 20, y, 10, "red");
+            dibujarCirculo(x + 40, y, 10, "darkred");
+        }
+        dibujarFlor(300, 200);
+    </script>
+</body>
+</html>

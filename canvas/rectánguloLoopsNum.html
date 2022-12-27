@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulo con loops</title>
+</head>
+<body>
+    <h1>Rectángulo con ciclos</h1>
+    <canvas
+        width= "600" height= "400">
+    </canvas>
+    <script>
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        function imprimir(frase){
+            jumpLine();
+            document.write(frase)
+        }
+
+        jumpLine();
+
+        function dibujarCuadrado(x, y, base, altura, color){    
+            var pantalla = document.querySelector("canvas");
+            var pincel = pantalla.getContext("2d");
+
+            pincel.fillStyle = color;
+            pincel.fillRect(x, y, base, altura);
+            pincel.strokeStyle = "black";  
+            pincel.strokeRect(x, y, base, altura); 
+        
+        }
+        function escribirTexto(x , y, texto) {
+            var pantalla = document.querySelector("canvas");
+            var pincel = pantalla.getContext("2d");
+
+            pincel.font = "15px Arial";
+            pincel.fillStyle = "black";
+            pincel.fillText(texto, x, y);    
+        }
+        var serie2009 = [6, 47, 41, 3, 3];
+        var serie2019 = [81, 9, 3, 3, 4];
+        var colores = ["blue", "green", "yellow", "red", "gray"];
+
+        jumpLine();
+        imprimir("inicio 1ra barra: 50, 50, serie2009, colores, 2009");
+
+        function dibujarBarra(x, y, serie, colores, texto){
+            escribirTexto(x, y - 10, texto); // inicio de texto 
+            var suma = 0;
+            for( var i = 0; i < serie.length; i ++){
+                var altura = serie[i];
+                dibujarCuadrado(x, y + suma, 50, altura, colores[i] );
+                suma += altura;   
+            }
+            for(var j = 0; j < serie.length; j++){
+                escribirTexto(x  + 60, y + 10, altura); 
+            }
+        }
+        jumpLine();
+        imprimir(" inicio 2da barra: 150, 50, serie2019, colores, 2019");
+
+        dibujarBarra(50, 50, serie2009, colores, "2009");
+        dibujarBarra(150, 50, serie2019, colores, "2019");
+       
+        jumpLine();
+        imprimir(serie2009);
+        imprimir(serie2019);
+        imprimir(colores);
+
+        /*var x = 0;
+        while(x < 600){
+            dibujarCuadrado(x, 0, "yellow");
+            dibujarCuadrado(x, 50, "blue");
+            dibujarCuadrado(x, 100, "red");
+
+            x = x + 50;
+        }*/
+    </script>
+</body>
+</html>

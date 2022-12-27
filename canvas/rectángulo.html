@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulo</title>
+</head>
+<body>
+    <h1>Rectángulo</h1>
+    <canvas
+        width= "600" height= "400">
+    </canvas>
+    <script>
+        function dibujarCuadradoRojo(x,y,x1,y1){    
+            var pantalla = document.querySelector("canvas");
+            var pincel = pantalla.getContext("2d");
+
+            pincel.fillStyle = "red";
+            pincel.fillRect(x, y, x1, y1);
+            pincel.strokeStyle = "black";  // borde
+            pincel.strokeRect(x, y, x1, y1); //stroke rectángulo
+        
+        }
+
+        function dibujarCuadradoBlue(x,y,x1,y1){    
+            var pantalla = document.querySelector("canvas");
+            var pincel = pantalla.getContext("2d");
+
+            pincel.fillStyle = "blue";
+            pincel.fillRect(x, y, x1, y1);
+            pincel.strokeStyle = "black";  // borde
+            pincel.strokeRect(x, y, x1, y1); //stroke rectángulo
+        
+        }
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+
+        dibujarCuadradoBlue(5, 10, 20, 30);
+        dibujarCuadradoBlue(25, 10, 20, 30);
+        dibujarCuadradoBlue(45, 10, 20, 30);
+
+        jumpLine();
+        jumpLine();
+
+        dibujarCuadradoRojo(5, 40, 30, 40);
+        dibujarCuadradoRojo(5, 80, 30, 40);
+        
+
+        jumpLine();
+        jumpLine();
+        jumpLine();
+        jumpLine();
+
+        function dibujarCuadradoColor(x,y,color){    
+            var pantalla = document.querySelector("canvas");
+            var pincel = pantalla.getContext("2d");
+
+            pincel.fillStyle = color;
+            pincel.fillRect(x, y, 200, 200);
+            pincel.strokeStyle = "black";  // borde
+            pincel.strokeRect(x, y, x1, y1); //stroke rectángulo
+        
+        }
+        jumpLine();
+
+        dibujarCuadradoColor(400, 300, "yellow");
+        
+        pincel.fillStyle = "green";
+        pincel.fillRect(0, 0, 50, 50);
+        pincel.strokeStyle = "black";  // borde
+        pincel.strokeRect(0, 0, 50, 50); //stroke rectángulo
+
+        pincel.fillStyle = "white";
+        pincel.fillRect(50, 0, 50, 50);
+        pincel.strokeStyle = "black";  // borde
+        pincel.strokeRect(50, 0, 50, 50); //stroke rectángulo
+
+        pincel.fillStyle = "green";
+        pincel.fillRect(100, 0, 50, 50);
+        pincel.strokeStyle = "black";  // borde
+        pincel.strokeRect(100, 0, 50, 50); //stroke rectángulo
+
+        pincel.fillStyle = "white";
+        pincel.fillRect(150, 0, 50, 50);
+        pincel.strokeStyle = "black";  // borde
+        pincel.strokeRect(150, 0, 50, 50); //stroke rectángulo
+
+        pincel.fillStyle = "green";
+        pincel.fillRect(200, 0, 50, 50);
+        pincel.strokeStyle = "black";  // borde
+        pincel.strokeRect(200, 0, 50, 50); //stroke rectángulo    
+
+    </script>
+    
+</body>
+</html>

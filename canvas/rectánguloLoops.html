@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulo con loops</title>
+</head>
+<body>
+    <h1>Rectángulo con ciclos</h1>
+    <canvas
+        width= "600" height= "400">
+    </canvas>
+    <script>
+        jumpLine();
+        jumpLine();
+        function dibujarCuadrado(x, y, color){    
+            var pantalla = document.querySelector("canvas");
+            var pincel = pantalla.getContext("2d");
+
+            pincel.fillStyle = color;
+            pincel.fillRect(x, y, 50, 50);
+            pincel.strokeStyle = "black";  // borde
+            pincel.strokeRect(x, y, 50, 50); //stroke rectángulo
+        
+        }
+        var x = 0;
+        while(x < 600){
+            dibujarCuadrado(x, 0, "yellow");
+            dibujarCuadrado(x, 50, "blue");
+            dibujarCuadrado(x, 100, "red");
+
+            x = x + 50;
+        }
+        function jumpLine(){
+            document.write("<br><br>")
+        }
+        jumpLine();
+        jumpLine();
+        for( var y = 0; y < 300; y = y + 50){
+            dibujarCuadrado(0, y, "green");
+            dibujarCuadrado(50, y, "white");
+            dibujarCuadrado(100, y, "red");
+        }
+    </script>
+</body>
+</html>
