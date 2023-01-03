@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas != radios</title>
+</head>
+<body>
+    <h1> != radios con Math.Pi</h1>
+    <canvas
+        width= "600" height= "400">
+    </canvas>
+    
+    <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "lightgreen";
+        pincel.fillRect(0, 0, 600, 400);
+        
+        function disenarCircunferencia(x, y, radio){
+            pincel.fillStyle = "red";
+            pincel.beginPath();
+            pincel.arc(x, y, radio, 0, 2 * Math.PI);
+            pincel.fill();
+        }
+
+        disenarCircunferencia(10, 10, 5);
+        disenarCircunferencia(20, 20, 10);
+        disenarCircunferencia(37, 37, 15);
+        disenarCircunferencia(60, 60, 20);
+        disenarCircunferencia(97, 97, 35);
+
+        function limpiarPantalla(){ // requiero una función q limipie cada determinado tiempo
+            pincel.clearRect(0, 0 , 600, 400); // llamo la propiedad clearRect con las medidas del canvas
+        }
+        /*var x = 0; para un solo sentido 
+
+        function actualizarPantalla(){
+            //limpiarPantalla(); lo quito para evidencia ambos grafos
+            disenarCircunferencia(x, 10, 5);
+            x ++;
+        }
+        
+        setInterval(actualizarPantalla, 80); // setInterval para los miliseg
+        */
+        var z = 0;
+        var sentido = 1;
+        function pantallaIzqDere(){
+            limpiarPantalla();
+            if(z > 600){ // verifico q no pase de 600
+                sentido = -1; // para los dos sentidos
+            }else if(z < 0){
+                sentido = 1;
+            }
+            disenarCircunferencia(z, 10 , 5);
+            z = z + sentido;
+        }
+        setInterval(pantallaIzqDere, 30);
+    </script>
+    <p> para != los radios comentar función actualizarPantalla y setInterval</p>
+</body>
+</html>

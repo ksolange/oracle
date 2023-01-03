@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación</title>
+</head>
+<body>
+    <h1>Diseñar con mouse</h1>
+    <canvas
+        width= "600" height= "400">
+    </canvas>
+    <script>
+        var pantalla = document.querySelector('canvas');
+        var pincel = pantalla.getContext('2d');
+
+        pincel.fillStyle = 'lightyellow';
+        pincel.fillRect(0, 0, 600, 400);
+
+        var puedoDibujar = false;
+
+        var rojo = 0;
+        var verde = 50;
+        var azul = 100;
+        var yCuadrados = 0;
+        var tamanoCuadrados = 50;
+        var colorActual = 'blue'; // tamanoCuadrados en píxeles
+
+        function dibujarCirculo(x, y, colorActual) {
+
+            if(puedoDibujar) {
+                
+                pincel.fillStyle = colorActual;
+                pincel.beginPath();
+                pincel.arc(x, y, 5, 0, 2 * Math.PI);
+                pincel.fill();
+            }
+        }
+
+        function dibujarCuadrado(x, y, tamano, color){
+            pincel.fillStyle = color;
+            pincel.fillRect(x, y, tamano, tamano);
+            pincel.fill();
+        }
+
+        function paletaColores(){
+            
+            dibujarCuadrado(rojo, yCuadrados, tamanoCuadrados, 'red');
+            dibujarCuadrado(verde, yCuadrados, tamanoCuadrados, 'green');
+            dibujarCuadrado(azul, yCuadrados, tamanoCuadrados, 'blue');
+        }
+
+        function habilitarDibujar() {
+            puedoDibujar = true;
+        }
+
+        function deshabilitarDibujar() {
+            puedoDibujar = false;
+        }
+
+        function puedeDisenarArea(xCoordenada, yCoordenada){
+            if((xCoordenada >= 0 && xCoordenada < (3 * tamanoCuadrados + 5)) &&
+                (yCoordenada >= 0 && yCoordenada <(tamanoCuadrados +5 ))){ // el problema estaba aquí tenía 2 (( )) adicionales
+                return false;
+            } else {
+            return true;
+            }
+        }
+
+        function capturarMovimientoDelMouse(evento){
+            var x = evento.pageX - pantalla.offsetLeft;
+            var y = evento.pageY - pantalla.offsetTop;
+
+            if(puedeDisenarArea(x, y)){
+                dibujarCirculo(x, y, colorActual); // 2do error, me faltaba llamar el colorActual 
+            }
+        }
+
+        function seleccionarColor(evento){
+            var x = evento.pageX - pantalla.offsetLeft;
+            var y = evento.pageY - pantalla.offsetTop;
+
+            if(y > yCuadrados && y < (yCuadrados + tamanoCuadrados)){ // 3er error el > estaba en < 
+                if(x > rojo && x < (rojo + tamanoCuadrados)){
+                    colorActual = 'red';
+                    console.log(colorActual);
+                }else if(x > verde && x < (verde + tamanoCuadrados)){
+                    colorActual = 'green';
+                    console.log(colorActual);
+                }else if(x > azul && x < (azul + tamanoCuadrados)) {
+                    colorActual = 'blue';
+                    console.log(colorActual);
+                }
+            }
+        }
+        
+        pantalla.onmousemove = capturarMovimientoDelMouse; // capturar el movimiento del mouse
+
+        pantalla.onmousedown = habilitarDibujar;    // ejecutar un código cuando el mouse está presionado
+
+        pantalla.onmouseup = deshabilitarDibujar;   //  botón del mouse es soltado.
+
+        paletaColores();
+
+        pantalla.onclick = seleccionarColor;
+    </script>
+    
+</body>
+</html>
