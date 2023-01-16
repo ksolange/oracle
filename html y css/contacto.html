@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel = "stylesheet" href = "reset.css"> <!--quita los estilos q tiene por defecto colocan los navegadores-->
+    <link rel = "stylesheet" href = "productos.css">
+</head>
+<body>  
+    <header>
+        <div class= "caja">
+            <h1><img src= "/oracle/html y css/imagenes/logo.png"> Productos barbería</h1>
+            <nav>
+                <ul>
+                    <li><a href="/oracle/html y css/barberia.html">Home</a></li>
+                    <li><a href="/oracle/html y css/productos.html">Producto</a></li>
+                    <li><a href="/oracle/html y css/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for = "nombreapellido">Nombre y Apellido</label>
+            <input type = "text" id = "nombreapellido" class = "input-padron">
+
+            <label for = "correoelectronico">Correoo eléctronico</label>
+            <input type = "text" id = "correoelectronico" class = "input-padron">
+
+            <label for = "telefono">Teléfono</label>
+            <input type = "text" id = "telefono" class = "input-padron">
+
+            <label for = "mensaje" >Mensaje</label>
+            <textarea cols = "70" rows = "10" id = "mensaje" class = "input-padron"></textarea>
+            
+            <div>
+                <p>¿Cuál es el medio de comunicacón favorito, para comunicarse con nosotros?</p>
+                <br>
+
+                <label for = "radio-email">
+                    <input type = "radio"  name = "contacto" value = "email" id = "radio-email"> 
+                    Email
+                </label>
+                <!--identificador unico el name para q no me permita escoger solo una opción-->
+
+                <label for = "radio-telefono">
+                    <input type = "radio" name = "contacto" value = "telefono" id = "radio-telefono">
+                    Teléfono
+                </label>
+
+                <label for = "radio-whatsapp">
+                    <input type = "radio" name = "contacto" value = "whatsapp" id = "radio-whatsapp">    
+                    WhatsApp
+                </label>
+                
+            </div>
+            
+            <label class = "checkbox">¿Desea recibir más noticias sobre barbería Alura?
+                <input type = "checkbox">
+            </label>
+            
+
+            <input type = "submit" value = "Enviar">
+        </form>
+    </main>
+
+    <footer>
+        <img src = "/oracle/html y css/imagenes/logo-blanco.png">
+        <p class = "copyright">&copy Copyright barbería Alura todos los derechos reservados - 2023</p> <!--unicode se busca el de la entidad siempre en el caso del copyright es &copy-->
+    </footer>
+    
+</body>
+</html>
