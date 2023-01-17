@@ -3,10 +3,75 @@ header {
     padding: 20px 0;
 }
 
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
 footer{
     background: url(/oracle/html\ y\ css/imagenes/bg.jpg); /*llamado a la img desde el css*/
     padding: 40px;
     text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 940px;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 110px;
+}
+
+nav li{
+   display: inline;
+   margin: 0 0 0 15px;
+}
+
+nav a{
+   color: #000000;
+   font-weight: bold;
+   font-size: 22px;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+nav a:hover{
+   color: #c78c19;
+   text-decoration: underline;
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-size: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    border-radius: 5;
+    padding: 8px 15px;
+}
+
+.caja{
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+}
+
+.checkbox{
+    margin: 20px 0;
 }
 
 .copyright{
@@ -15,16 +80,35 @@ footer{
     margin: 20px;
 }
 
-.caja{
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
+.enviar{
+    background: #BBBBBB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
+    transition: 2s all; /* transition, transform desde css 3 antes solo era permitido en js*/
+    width: 40%;
+}
+
+.enviar:hover{
+    background: darkgray;
+    transform: scale(1.2) rotate(70deg);
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
 }
 
 .productos{
-    width: 940px;
     margin: 0 auto;
     padding: 50px;
+    width: 940px;
 }
 
 .productos h2{
@@ -33,18 +117,18 @@ footer{
 }
 
 .productos li{
+    border-color: #000000;
+    border-radius: 10px;
+    box-sizing: border-box; /*para q no sobrepase los 940px ni los 30% */
+    border-style: dashed;
+    border-width: 5px;
     display: inline-block;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    /*border-top-width: 10px;*/
     text-align: center;
     width: 30%;
     vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box; /*para q no sobrepase los 940px ni los 30% */
-    border-color: #000000;
-    border-radius: 10px;
-    border-style: dashed;
-    border-width: 5px;
-    /*border-top-width: 10px;*/
 }
 
 .productos li:hover{
@@ -70,52 +154,5 @@ footer{
     margin-top: 20px;
 }
 
-nav {
-     position: absolute;
-     top: 110px;
-     right: 0;
-}
 
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
 
-nav a{
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-nav a:hover{
-    color: #c78c19;
-    text-decoration: underline;
-}
-
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
-form{
-    margin: 40px 0;
-}
-
-form label, form p{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-
-.input-padron{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-
-.checkbox{
-    margin: 20px 0;
-}

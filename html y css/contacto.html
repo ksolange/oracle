@@ -11,7 +11,7 @@
 <body>  
     <header>
         <div class= "caja">
-            <h1><img src= "/oracle/html y css/imagenes/logo.png"> Productos barbería</h1>
+            <h1><img src= "/oracle/html y css/imagenes/logo.png" alt = "logo barbería Alura"> Productos barbería</h1>
             <nav>
                 <ul>
                     <li><a href="/oracle/html y css/barberia.html">Home</a></li>
@@ -24,19 +24,19 @@
     <main>
         <form>
             <label for = "nombreapellido">Nombre y Apellido</label>
-            <input type = "text" id = "nombreapellido" class = "input-padron">
+            <input type = "text" id = "nombreapellido" class = "input-padron" required placeholder = "Name - nombre">
 
             <label for = "correoelectronico">Correoo eléctronico</label>
-            <input type = "text" id = "correoelectronico" class = "input-padron">
+            <input type = "email" id = "correoelectronico" class = "input-padron" required placeholder = "email@dominio.com">
 
             <label for = "telefono">Teléfono</label>
-            <input type = "text" id = "telefono" class = "input-padron">
+            <input type = "tel" id = "telefono" class = "input-padron" required placeholder = "( + 57 60 311 111 11 11)">
 
             <label for = "mensaje" >Mensaje</label>
-            <textarea cols = "70" rows = "10" id = "mensaje" class = "input-padron"></textarea>
+            <textarea cols = "70" rows = "10" id = "mensaje" class = "input-padron" required></textarea>
             
-            <div>
-                <p>¿Cuál es el medio de comunicacón favorito, para comunicarse con nosotros?</p>
+            <fieldset>
+                <legend>¿Cuál es el medio de comunicacón favorito, para comunicarse con nosotros?</legend>
                 <br>
 
                 <label for = "radio-email">
@@ -51,23 +51,60 @@
                 </label>
 
                 <label for = "radio-whatsapp">
-                    <input type = "radio" name = "contacto" value = "whatsapp" id = "radio-whatsapp">    
+                    <input type = "radio" name = "contacto" value = "whatsapp" id = "radio-whatsapp" checked> <!--lo dejamos por defecto-->    
                     WhatsApp
                 </label>
                 
-            </div>
+            </fieldset> <!--fieldset referencian a un mismo tipo de dato por eso no se usa el div, dentro de él se usa etiqueta a legend no P-->
             
+            <fieldset>
+                <legend>En que horario puede ser atendido</legend>
+                <select name="" id="">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+                
+            </fieldset>
+
             <label class = "checkbox">¿Desea recibir más noticias sobre barbería Alura?
-                <input type = "checkbox">
+                <input type = "checkbox" checked>
             </label>
             
 
-            <input type = "submit" value = "Enviar">
+            <input class = "enviar" type = "submit" value = "Enviar">
         </form>
+
+        <table>
+            <thead> <!-- semántica de las tablas: encabezado de las tablas-->
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>    <!--cuerpo de la tabla-->
+                <tr>
+                    <td>Lunes</td>
+                    <td>08 - 20 hr</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>09 -21 hr</td>
+                </tr>
+                <tr>
+                    <td>Miércoles - Sabádo</td>
+                    <td>10 - 20 hr</td>
+                </tr>
+            </tbody>
+            <tfoot> <!--final de la semántica de una tabla-->
+
+            </tfoot>
+        </table>
+
     </main>
 
     <footer>
-        <img src = "/oracle/html y css/imagenes/logo-blanco.png">
+        <img src = "/oracle/html y css/imagenes/logo-blanco.png" alt = "logo barbería Alura">
         <p class = "copyright">&copy Copyright barbería Alura todos los derechos reservados - 2023</p> <!--unicode se busca el de la entidad siempre en el caso del copyright es &copy-->
     </footer>
     

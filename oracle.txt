@@ -34,3 +34,29 @@ ____ prompt : es = input pero con un cuadro pequeño de alert q recibe la info
 --------------------------------- canva 2d
 https://developer.mozilla.org/es/docs/Web/API/Canvas_API 
 https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
+
+
+___________html 3
+El textarea, para entradas de texto de más de una fila.
+El select, que es selector, un campo de selección de un ítem, y el option, que representa cada opción del selector.
+Algunos tipos de inputs para el celular: email, tel, number, password, date, datetime, month y search.
+
+Cómo configurar campos obligatorios, o sea, exigir al usuario para que algunos campos sean completados, a través del atributo required.
+
+Cómo mostrar una sugerencia para completar los campos, a través del atributo placeholder.
+
+Cómo dejar una opción marcada por padrón en nuestros input radio y checkbox a través del atributo checked.
+
+Cómo estructurar mejor nuestro código con fieldset y legend.
+
+
+A crear una tabla HTML.
+La etiqueta table, representa la tabla.
+La etiqueta tr, representa la fila de la tabla.
+La etiqueta td, representa la celda de la tabla.
+La etiqueta thead, representa el encabezado de la tabla.
+La etiqueta tbody, representa el cuerpo de la tabla.
+La etiqueta th, representa la celda del encabezado de la tabla.
+La etiqueta tfoot, representa el pie de página de la tabla.
+
+Cómo agregar una alternativa a la imagen, describiéndola, con el atributo alt.
