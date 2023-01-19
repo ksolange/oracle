@@ -1,3 +1,8 @@
+/*body exportado con licencia abierta de fonts.google.com montserrat*/
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
 header {
     background-color: #BBBBBB;
     padding: 20px 0;
@@ -17,11 +22,6 @@ footer{
     background: url(/oracle/html\ y\ css/imagenes/bg.jpg); /*llamado a la img desde el css*/
     padding: 40px;
     text-align: center;
-}
-
-main {
-    margin: 0 auto;
-    width: 940px;
 }
 
 nav {
@@ -153,6 +153,104 @@ td, th{
     font-weight: bold;
     margin-top: 20px;
 }
+
+/*CSS para pag principal*/
+.banner{
+    width: 100%;
+}
+
+.contenido-diferenciales{
+    margin: 0 auto;
+    width: 640px;
+}
+
+.diferenciales{
+    background: #888888;
+    padding: 3em 0;
+}
+
+.lista-diferenciales{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.imgCentral{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0; /*siempre en sentido de las manecillas del reloj*/
+}
+
+.img-diferenciales{
+    width: 60%;
+}
+
+.items{
+    line-height: 1.5; /*da espacio interlineal*/
+}
+.items:first-child{
+    font-size: bold;
+}
+
+/*.items:nth-child(2){
+    font-weight: bold;
+}*/
+
+/*este es el formato para el mapa*/
+.mapa{
+    background: linear-gradient(45deg, #fefefe, #888888);
+    float: center; /*no me funcionó*/
+    padding: 3em 0;
+}
+
+.mapa-contenido{ /*quito el main y coloco div con una clase para conservarle*/
+    margin: 0 auto;
+    width: 940px;
+}
+
+.mapa-contenido p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.principal{
+    background: #fefefe;
+    margin: 0 auto;
+    padding: 3em 0;
+    width: 940px;
+}
+
+.principal p{
+    margin: 0 0 2em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.titulo-principal{
+    font-size: 2em;
+    margin: 0 0 1em;
+    text-align: center;    
+    clear: left; /*que me afecte solo esta sección */
+}
+
+/*sección vídeos adjuntos*/
+.videos{
+    margin: 1em auto;
+    width: 560px;
+}
+
+.videos p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+
 
 
 

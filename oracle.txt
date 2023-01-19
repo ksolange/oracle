@@ -60,3 +60,10 @@ La etiqueta th, representa la celda del encabezado de la tabla.
 La etiqueta tfoot, representa el pie de página de la tabla.
 
 Cómo agregar una alternativa a la imagen, describiéndola, con el atributo alt.
+
+
+<iframe>: insertar diferentes tipos de elementos externos en nuestra página. Sean estos mapas, vídeos, imágenes u otras páginas web o páginas de redes sociales.
+
+
+pseudo-clases ejemplo .items:fist-child, se le puede solicitar el orden de > a < cual deseo modificar 
+pseudo-clases para hacer selecciones especiales en los ítems de la lista de los diferenciales y aplicar algunos efectos especiales. 

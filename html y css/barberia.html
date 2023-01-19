@@ -5,19 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbería</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <header>
-        <h1>Sobre la barbería Alura</h1>
+        <div class= "caja">
+            <h1><img src= "/oracle/html y css/imagenes/logo.png"> Productos barbería</h1>
+            <nav>
+                <ul>
+                    <li><a href="/oracle/html y css/barberia.html">Home</a></li>
+                    <li><a href="/oracle/html y css/productos.html">Producto</a></li>
+                    <li><a href="/oracle/html y css/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <img src="/oracle/Bugs.png" alt="">
-    <p>Ubicada en el corazón de la ciudad, la <strong>  barvería Alura </strong>  trae para el mercado lo mejor que ahí para su cabello y barba. Fundada en 2020, la barbería Alura es altamanete destacada en la ciudad y conquista nuevos clientes diariamente.</p>
-    
-    <p> <em> Nuestra misión es: <strong> "Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+    <main>
+        <section class = "principal">
+            <img class = "banner" src="/oracle/Bugs.png" alt="">
 
-    <p>Ofrecemos profesionales experimientados que están constantemente observando los cambios y mocvimiento en el mundo de la moda, para así ofrecer a nuestro clientes las últimas tendencias. El atender posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+            <br>
+            <br>
 
+            <p>Ubicada en el corazón de la ciudad, la <strong>  barvería Alura </strong>  trae para el mercado lo mejor que ahí para su cabello y barba. Fundada en 2020, la barbería Alura es altamanete destacada en la ciudad y conquista nuevos clientes diariamente.</p>
+            
+            <p> <em> Nuestra misión es: <strong> "Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+
+            <p>Ofrecemos profesionales experimientados que están constantemente observando los cambios y mocvimiento en el mundo de la moda, para así ofrecer a nuestro clientes las últimas tendencFias. El atender posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+        </section>
+        
+        <section class = "pricipal">
+            <br>
+            <h2 class = "titulo-principal">Sobre la barbería Alura</h2>
+            
+            <img class = "imgCentral" src = "./imagenes/logo.png" alt = "utensilios">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi sed labore alias? Molestiae numquam suscipit laboriosam incidunt labore quam quisquam tempora eligendi corrupti? Expedita sint sit voluptates quod rerum!</p>
+        </section>
+        <br>
+        <section class = "diferenciales">
+            <h3 class = "titulo-principal">Diferenciales</h3>
+            <div class = "contenido-diferenciales">
+                <ul class = "lista-diferenciales">
+                    <li class = "items">Atención personalizada a los clientes</li>
+                    <li class = "items">Espacio diferenciado</li>
+                    <li class = "items">Localización</li>
+                    <li class = "items">Profesionales calificados</li>
+                    <li class = "items">Puntualidad</li>
+                    <li class = "items">Limpieza</li>
+                </ul><img src= "./imagenes/barba.jpg" alt = "barbería Alura Bugs" class = "img-diferenciales">
+            </div>
+        </section>
+
+        <section class = "mapa-contenido">
+            <div class = "mapa-contenido">
+                <h3 class = "titulo-principal">Nuestra ubicación</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, nostrum atque. Voluptate, modi tempore pariatur soluta veritatis iure itaque provident repellat fugiat reprehenderit officiis ipsa laboriosam corporis doloremque, nemo in.</p>
+
+                <br>
+            
+                <iframe class = "mapa" src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4318079261243!2d-74.03513638590982!3d4.694791343017645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aa7cb44daf9%3A0xdfaf3c22261fa826!2sHospital%20Santa%20Fe%20Edificio9!5e0!3m2!1ses-419!2ses!4v1674137060922!5m2!1ses-419!2ses" width = "100%" height = "300" style = "border:0;" allowfullscreen = "" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--la etiqueta iframe: insertar diferentes tipos de elementos externos en nuestra página. Sean estos mapas, vídeos, imágenes u otras páginas web o páginas de redes sociales.-->
+            </div>
+        </section>
+
+        <div class = "videos">
+            <br>
+            <h3 class = "titulo-principal">Multimedia</h3>
+            <p>Aquí encontrarás nuestros vídeos más solicitados/ vistos por nuestros seguidores</p>
+            <iframe width = "560" height = "315" src = "https://www.youtube.com/embed/JqaGwMlBEH4?start=2" title = "YouTube video player" frameborder = "0" allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    </main>
+    <footer>
+        <img src = "/oracle/html y css/imagenes/logo-blanco.png">
+        <p class = "copyright">&copy Copyright barbería Alura todos los derechos reservados - 2023</p> <!--unicode se busca el de la entidad siempre en el caso del copyright es &copy-->
+    </footer>
+    
 </body>
 </html>
