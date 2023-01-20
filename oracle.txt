@@ -67,3 +67,17 @@ Cómo agregar una alternativa a la imagen, describiéndola, con el atributo alt.
 
 pseudo-clases ejemplo .items:fist-child, se le puede solicitar el orden de > a < cual deseo modificar 
 pseudo-clases para hacer selecciones especiales en los ítems de la lista de los diferenciales y aplicar algunos efectos especiales. 
+
+
+
+pseudo ---Avanzado: ejemplo main > p{} le digo q seleccione solo los parráfos hijos del MAIN, para referenciar parráfos q están después de ese hijo(después del main) sería así img + p { background:}, para aplicar a todos los parráfos después de la img: img ~ p {background:}, otro caso es q deseamos q nuestros parráfos tengan un mismo color a excepción del 2do o 3er parráfo: (1ro llamo al selector universal ----> .principal p:not 2do.nombre selector id (#))
+.principal p:not(#mision){background} 
+
+
+para hacer adecuar la pag para poder observarle en otros dispositivos, por medio de cálculos con respecto al ancho de la pag: width: calc(40% - (26px)); -------> ejemplo: ¿Cómo usar medidas proporcionales para dejar un elemento 100% de ancho con el equivalente a un tercio del elemento padre, menos 10px? R: width: calc( (100% / 3) - 10px )
+
+
+opacidad - opaco (opacity): es la capacidad de los elementos de dejar pasar la luz.   
+
+sombras: ubicación de las sombras en 3 aspectos (eje horizontal , eje vertical y el color de la sombra) --> box-shadow: 10px 10px black; ---> si coloco box-shadow: 10px -10px black; queda en la parte superior la sombra; también puedo manejar la difuminarle así, siendo el 3er parámetro box-shadow: 10px 10px 10 px black; -- de = modo puedo modificar la expasión q es el 4to parámetro: box-shadow: 10px 10px 30px 25px black;-----------> sombras internas:::: box-shadow: inset 0 0 30px black;;
+developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_borders/Box-shadow_generator
