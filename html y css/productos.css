@@ -239,7 +239,7 @@ p:first-line{
     margin: 0 0 2em;
 }
 
-.principal p:not(#mision){
+.principal p:not(#mision, #Alura){
     background:grey;
 } 
 
@@ -280,7 +280,23 @@ p:first-line{
     text-align: center;
 }
 
+@media screen and (max-width: 480px){ /* configuración todo tipo de pantallas responsive */
+    h1{
+        text-align: center;
+    }
 
+    nav{
+        position: static;
+    }
+
+    .caja, .contenido-diferenciales, .mapa-contenido, .principal, .videos{
+        width: auto;
+    }
+
+    .lista-diferenciales, .img-diferenciales{
+        width: 100%;
+    }
+}
 
 
 
