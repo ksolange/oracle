@@ -1,0 +1,11 @@
+.headerPrincipal .container{ /*display flex para el padre quedan lado lado*/
+    display: flex; /*display inline block no funciono porq al colocarle el px se dañaba todo el diseño*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerPrincipal-nav{
+    display: flex; /*para ver barra de navegación horizontal*/
+    /*si deseo quitar el espacio entre los botones quito el margin en nav-link*/
+    
+}
