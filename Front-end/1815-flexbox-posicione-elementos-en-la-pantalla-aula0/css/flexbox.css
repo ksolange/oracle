@@ -9,3 +9,96 @@
     /*si deseo quitar el espacio entre los botones quito el margin en nav-link*/
     
 }
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list { /*tenía mal escrito la clase .rodapePrincipal-navMap-link por eso no me quedaba bien links con descripciones*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*no space-between porq desde q inicia las letras de mapa d cursos, debe ser space-arround para conservar un espacio*/
+    width: 70%; /* dividir los % entre width y margin para un 75% */
+    margin-right: 5%;
+}
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column; /*flex direction siempre por patrón filas de un lado a otro pero lo necesitamos aquí para columnas*/
+    height: 250px;
+    flex-wrap: wrap; /*por cada 250px q encuentre realiza una columna siempre y cuando tenga más contenido*/
+}
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;
+}
+.videoSobre .container{
+    display: flex;
+}
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.videoSobre-video {
+    flex-grow: 2; /*flex-grow toma todos los espacios y lso divide entre los elementos q lo necesiten*/
+    flex-shrink: 2; /*conforme disminuye la pantalla el le coloca 2 veces menor el tamaño del vídeo*/
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 2; /*este crea el espacio entre el botón y los elementos*/ 
+}
+
+/*Responsive su empieza a usar cuando el px max d 768*/
+    @media (max-width:768px){
+    .headerPrincipal .container{
+        flex-direction: column;
+        align-items: initial; /*alineación de inicio a extremo de forma horizontal*/
+        text-align: center;
+    }
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+    .contenidoPrincipal-cursos{
+        flex-direction: column; /*para q queden en columnas ya q arriba tenemos el wrap este lo complementa*/
+    }
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+    .rodapePrincipal-navMap-list {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+    .rodapePrincipal-patrocinadores-list{
+        align-items: center;
+        width: 100%;
+        margin: 0%;
+    }
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+    .headerPrincipal-nav-link-app{ /*organiza los items con -1 para saber cual debe ir primero en este caso descarga de la app para mobile*/
+        order: -1;
+    }
+    .headerPrincipal-nav-link-app {
+        order: -1;
+    }
+    .videoSobre .container {
+        flex-direction: column;
+    }
+}
