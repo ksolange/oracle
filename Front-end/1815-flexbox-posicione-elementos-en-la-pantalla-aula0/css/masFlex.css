@@ -1,0 +1,46 @@
+.flexContainer:last-child { margin-top: 2em;}
+
+body {margin: 0; padding: 0;}
+
+div { height: 50px; width: 50px; }
+
+div:nth-child(1) { background-color: red; width: 50px; height: 50px;}
+
+div:nth-child(2) { background-color: blue; }
+
+div:nth-child(3) {background-color: green; }
+
+div:nth-child(4) { background-color: yellow;  }
+
+div:nth-child(5) { background-color: pink; }
+
+div:nth-child(6) { background-color: black; }
+
+div:nth-child(7) { background-color: orange; }
+
+div:nth-child(8) { background-color: silver; }
+
+/*fin de configuración*/
+
+.flexContainer{
+    height: 800px; /*para la distribución del espacio entre ellos*/
+    display: flex;
+    justify-content: center; /*justify-content:space-around*/
+    align-items: center; /* los elementos quedan alineados no desde el inicio del primer o el obj más grande sino quedan en el medio*/
+    flex-direction: column; /*permite q los elementos cambien como estaban en el x a eje y */
+}
+
+.flexItem{
+    flex-grow: 1;/*lo distribuye por la cantidad de obj q tenga y les da en el caso q sea 1 el mismo valor y % a cada uno de ellos*/
+    flex-shrink: 1; /*distribuye el espacio entre flex-grow y flex-shrink*/
+}
+
+.primero{
+    /*flex-grow: 2; divide entre 5 al primero le corresponde 2 pedazos de */
+    flex-shrink: 2; /*aquí se reduce dos veces menos el PRIMER item de forma proporcional, para entender está propiedad quitar arriba el flex-direction y mirar en el inspec*/
+    /*flex-basis: 200px; va dentro de la función de flex-box funciona = q el width, independientemente d cuanto crezcan los demás él siempre tendrá el número q yo le de
+    para que funcione como tiene flex-grow: 0 ; se deshabilita con 0
+    todo esto se puede simplificar así: flex: 0 1 200px; porq específico cada propiedad q posee el flex*/
+}
+
+

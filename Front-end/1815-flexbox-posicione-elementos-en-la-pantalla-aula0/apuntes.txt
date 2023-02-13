@@ -12,5 +12,15 @@ Poner todo el espacio entre los elementos como vimos antes con justify-content: 
 Y una posibilidad muy interesante es también poner espacio alrededor de los elementos. Para ello podemos utilizar justify-content: space-around.
 
 
+---
+flex-shrink: 0 en el elemento que no queremos que se reduzca.
+
+Para ello podemos poner la propiedad flex-direction: column, que hace que los elementos queden uno debajo del otro. Este es el aspecto más importante de la capacidad de respuesta de flexbox.
+
+propiedad llamada align-self. Esta propiedad es aplicada al flex item y hace que se alinee individualmente.
+
+El align-self hace lo mismo, sólo que alinea un solo elemento y se coloca en el flex item.
+
 ------
 css-tricks.com/snippets/css/a-guide-to-flexbox/
+flexboxfroggy.com
