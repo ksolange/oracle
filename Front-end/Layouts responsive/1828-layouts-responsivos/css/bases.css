@@ -1,0 +1,5 @@
+/*se hace la ralación de nuestro index.html con el body */
+body{
+    font-family: 'Open Sans', sans-serif; /*en dado caso q el navegador no tenga elel Open san q en su defecto use el sans-serif*/
+    
+}
