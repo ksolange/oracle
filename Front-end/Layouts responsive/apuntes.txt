@@ -1,1 +1,23 @@
 REM proviene de “Root ephemeral” que en traducción técnica es la “variable de la raíz”, o sea, es una variable en relación de la propiedad font-size de la etiqueta raiz (HTML). EM proviene de “ephemeral” que significa “variable” y es una variable de la propiedad font-size de la etiqueta madre.
+----------------------------------
+svg: se usa para logotipos, íconos, ilustraciones más sencillas.
+
+--------------------------------
+mobile first: concepto q la versión móvil d una página web dese ser la 1ra.
+VENTAJAS: 1. se concentra en lo esencial.
+2. informaciones de más fácil acceso.
+3. máximo rendimiento.
+4. reduce el código fuente.
+5. uso d html.
+
+
+motivaciones de utilizar el desarrollo mobile-first:
+
+Gran parte de los accesos y ventas son de dispositivos móviles;
+El diseño es minimalista y simplificado;
+Enfoque en el contenido.
+Las motivaciones para utilizar el desarrollo desktop-first:
+
+La interfaz tiene features más ricas;
+Mayor capacidad de ejecución de las instrucciones;
+El producto es optimizado para desktop (ejemplo: Google Docs).
