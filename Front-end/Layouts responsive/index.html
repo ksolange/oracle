@@ -97,7 +97,7 @@
                     En Apeperia firmas nuestro servicio la manutención ya se incluye en el servicio. 
                     De esa manera no te preocupes con la actualización, es por cuenta de nosotros.
                 </p>
-                <p class="sobre_nosotros__texto sobre-nosotros__texto--destacado sobre-nosotros__texto--division">
+                <p class="sobre_nosotros__texto sobre-nosotros__texto--destacado sobre_nosotros__texto--division">
                     ¡Tenemos un equipo especializado y exclusivo para proyectos increíbles!
                 </p>
                 <ul class="sobre_nosotros__plataformas">
@@ -108,6 +108,7 @@
                 </ul>
                 <p class="sobre_nosotros__texto">Desarrollamos aplicaciones para todas plataformas</p>
             </div>
+            <img src = "./1828-layouts-responsivos/img/sobre-apeperia.png" alt = "Sobre Nosotros" class = "sobre_nosotros__imagen">
         </section>
         <section class="planes container">
             <h2 class="planes__titulo">Planes</h2>
@@ -150,19 +151,23 @@
             <a href = "#" class = "contacto_boton boton">Entre en contacto</a>
         </section>
         <section class = "institucional container">
-            <h2 class = "institucional__titulo">Institucional</h2>
-            <p class = "institucional__descripcion">Un poco más sobre Apeperia</p>
-            <address class = "institucional__direccion">
-                Calle Vergueiro, 3185 </br>
-                Villa Mariana, São Paulo
-                <article class = "institucional__contacto">
-                    <p>
-                        <a href = "tel: + 55 11 55712751" class = "institucional__contacto-telefono"> +55 11 55712751</a> o 
-                        <a href = "mailto:contato@apeperia.com" class="institucional__contacto-email"> contato@apeperia.com </a>
-                    </p>
-                </article>
-            </address>
-            <video src = "./1828-layouts-responsivos/img/formacion-java.mp4" class = "institucional__video" controls ></video>
+            <h2 class = "institucional__titulo">Institucional</h2> <!-- saco el título q estaba dentro del div para evitar q estuviera hacia el lado izquierdo, con esto quedo centrado -->
+            <div class="institucional__contenido">
+                <div class="institucional__informaciones"> <!--contiene toda la info la dirección, número contacto, etc-->
+                    <p class = "institucional__descripcion">Un poco más sobre Apeperia</p>
+                    <address class = "institucional__direccion">
+                        Calle Vergueiro, 3185 </br>
+                        Villa Mariana, São Paulo
+                        <article class = "institucional__contacto">
+                            <p>
+                                <a href = "tel: + 55 11 55712751" class = "institucional__contacto-telefono"> +55 11 55712751</a> o 
+                                <a href = "mailto:contato@apeperia.com" class="institucional__contacto-email"> contato@apeperia.com </a>
+                            </p>
+                        </article>
+                    </address>
+                </div>
+                <video src = "./1828-layouts-responsivos/img/formacion-java.mp4" class = "institucional__video" controls ></video>
+            </div>
         </section>
         <footer class = "footer container">
             <img src = "./1828-layouts-responsivos/img/logo-apeperia.svg" alt = "" class = "footer__logo">

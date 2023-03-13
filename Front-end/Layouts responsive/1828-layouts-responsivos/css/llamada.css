@@ -33,7 +33,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    /*.llamada {
+        background-color: #F0F;   tablets*/
     .llamada {
+        background-color: #F0F;
         background-image: url(../img/bg-intro.jpg);
         background-size: cover;
 
@@ -44,4 +47,4 @@
         font-size: 3.25rem;
         margin-bottom: 2rem;
     }
-}
+} 

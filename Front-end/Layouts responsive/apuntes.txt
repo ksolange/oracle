@@ -21,3 +21,9 @@ Las motivaciones para utilizar el desarrollo desktop-first:
 La interfaz tiene features más ricas;
 Mayor capacidad de ejecución de las instrucciones;
 El producto es optimizado para desktop (ejemplo: Google Docs).
+
+_____________
+Las media queries permiten crear páginas con estilos diferentes en el mismo archivo CSS por muchas condiciones diferentes
+
+Después que terminar de desarrollar todo el layout de la página en la versión mobile, el próximo paso es el diseño en la versión tablet, en este caso empieza a partir de 768px de largura. Para insertar todo el estilo sin cambiar la versión mobile, necesitamos utilizar un media query.
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/

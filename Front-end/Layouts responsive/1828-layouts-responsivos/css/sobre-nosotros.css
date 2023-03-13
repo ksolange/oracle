@@ -1,4 +1,4 @@
-.sobre-nosotros {
+.sobre_nosotros {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -13,7 +13,7 @@
     margin-bottom: 1.25rem;
 }
 
-.sobre_nosotros__texto {
+.sobre-nosotros__texto {
     line-height: normal;
     margin-bottom: 1rem;
 }
@@ -25,12 +25,17 @@
     margin-bottom: 1rem;
 }
 
-.sobre-nosotros {
+.sobre-nosotros__texto--destacado {
     color: var(--fuente-ceniza-oscuro);
     font-weight: 700;
 }
 
-@media screen and (min-width: 1024px) {
+
+.sobre-nosotros__imagen{/*mobile*/
+    display: none;
+}
+
+@media screen and (min-width: 1024px) { /*desktop*/
     .sobre_nosotros {
         display: flex;
     }
@@ -41,11 +46,11 @@
         text-align: left;
     }
     .sobre-nosotros__texto--division {
-        border-bottom: 1px solid var(--cinza-medio);
+        border-bottom: 1px solid var(--background-ceniza-medio);
 
         padding-bottom: 1.5rem;
     }
-    .sobre-nosotros__imagen {
+    .sobre_nosotros__imagen{ /*desbloqueo el display de arriba opción para mobile*/
         display: block;
     }
 }

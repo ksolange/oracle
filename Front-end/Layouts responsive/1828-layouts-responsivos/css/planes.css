@@ -105,7 +105,7 @@
     border-color: var(--planes-card-mega);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) { /*desktop*/
     .planes__tarjetas {
         flex-direction: row;
         justify-content: space-between;
