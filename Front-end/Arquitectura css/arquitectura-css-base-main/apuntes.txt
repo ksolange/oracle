@@ -1,0 +1,9 @@
+¿Qué es una arquitectura css?, es una metodología q se enfoca en la estructura de un proyecto, la metodología sigue un conjunto de reglas q se debe seguir para lograr algo y la arquitectura es ese conjunto d reglas aplicadas a una estructura de un proyecto.
+¿Cuales son los objetivos de una arquitectura css?, es la organización del código y carpetas junto a una metodología de clases para que el trabajo en equipo esté estandarizado.
+¿Que debe contener una arquitectura css?, 1. predecible: sus reglas hacen lo que se espera. Añadir o actualizar una regla no tiene repercusiones inesperadas. 2. Reutilizable: las reglas son abtractas y están desacopladas. Así se podrán crear nuesvos componentes de forma más rápida y sencilla. 3. Mantenible: es la capacidad de realizar cambios en la Css sin necesidad de tener que refactorizar el código existente. 4. Escalable: significa q a medida q la css aumentan d tamaño, siguen siendo fáciles de mantener. 
+Tipos de metodologías q existen:
+- Oocss.
+- Smacss.
+- Bem. Esta se usa aquí.
+- Itcss.
+- Acss(Atomic design). Esta se usa aquí.
