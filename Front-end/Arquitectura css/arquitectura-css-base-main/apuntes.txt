@@ -7,3 +7,29 @@ Tipos de metodologías q existen:
 - Bem. Esta se usa aquí.
 - Itcss.
 - Acss(Atomic design). Esta se usa aquí.
+
+__
+Metodología BEM: bloque, elemento, modificador.
+- Es una nomenclatura popular para clases en HTML Y CSS.
+- la idea es dividir la interfaz d usuario en bloques independientes.
+- permite crear componentes de interfaz extensibles y reutilizables. 
+BLOQUE: componente d página funcionalmente independiente que se puede reutilizar. En html, los bloques están representados por el class atributo, este atributo debe considerarse como un padre. --> <div class = "card">
+ELEMENTO: una parte compuesta de un bloque q no se puede usar por separado. 
+    < form class = "contacto">
+        <input class = "contacto__input">
+        <button class = "contacto__button">Enviar</button>
+    </form>
+
+MODIFICADOR: una entidad q define la apariencia, el estado o el comportamiento de  un bloque o elemento.
+<div class = "card">
+    <a class = "card_link" href = "">Nombre</a>
+    <a class = "card_link--resaltar" href = ""> Precio </a>  // los dos -- son los modificadores
+</div>
+
+___________
+ATOMIC DESIGN:o diseño atómico es una metodología para crear sistemas de diseño. Posee 5 niveles: 
+- Átomos: son los componentes básicos de la materia. En las interfaces, son nuestras etiquetas HTML.
+- Moléculas: son grupos de átomos unidos entre sí, son las unidades fundamentales más pequeñas de un compuesto.
+- Organismos: son grupos de moléculas unidas para formar una sección distinta y relativamente compleja de una interfaz.
+- Template: consisten principalmente en grupos de organismos unidos para formar páginas.
+- Páginas: son instancias específicas de plantillas. Es donde probamos la efectividad del sistema de diseño.
