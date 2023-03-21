@@ -1,0 +1,7 @@
+/*está es la caja contenedora de toda la info */
+.recetas{
+    background: #dab997;
+    display: flex; /*coloca nuestros productos uno al lado del otro*/
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+}

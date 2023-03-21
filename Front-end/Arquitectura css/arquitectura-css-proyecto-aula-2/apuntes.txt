@@ -1,0 +1,10 @@
+la flex-wrap propiedad es una subpropiedad del módulo diseño d caja flexible. Define si los elementos flexibles se fuerzan en una sola línea o se pueden distribuir en varias líneas. Si se establece en varias líneas, también define el eje transversal q determina la dirección en la q se apilas las nuevas líneas.
+RECORDATORIO: el eje transversal es el eje perpendicular al eje principal. Su dirección depende d la dirección del eje principal.
+La flex - wrap propiedad acepta 3 valores diferentes:
+1. nowrap (predeterminado): una sola línea q puede hacer q el contenedor se desborde.
+2. wrap: multilíneas, la dirección está definida por flex - direction.
+4. wrap - reverse: multilíneas, opuestas a la dirección definida por fle - direction. 
+
+
+https://www.aluracursos.com/blog/flexbox-css-guia-completo-elementos-y-ejemplos
+https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap
