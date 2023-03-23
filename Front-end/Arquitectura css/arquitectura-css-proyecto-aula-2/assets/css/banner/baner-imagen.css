@@ -1,4 +1,20 @@
 .banner__imagen{
+    background: url('/arquitectura-css-proyecto-aula-2/assets/img/banner.png') no-repeat center / cover;
+    /*background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
     width: 100%;
-    height:calc(100vh - 72px);
+    /*height:calc(100vh - 72px); se dejan solo en las media querys*/
+}
+
+@media screen and (min-width:0) {
+    .banner__imagen{
+        height:calc(100vh - 51px);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .banner__imagen{
+        height:calc(100vh - 72px);
+    }
 }

@@ -8,3 +8,13 @@ La flex - wrap propiedad acepta 3 valores diferentes:
 
 https://www.aluracursos.com/blog/flexbox-css-guia-completo-elementos-y-ejemplos
 https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap
+
+
+________
+Las propiedades abreviadas o “shorthand” son propiedades CSS que permiten establecer los valores de varias otras propiedades CSS simultáneamente. Usando una propiedad abreviada, puede escribir hojas de estilo más concisas, ahorrando tiempo y energía.
+
+https://developer.mozilla.org/es/docs/Web/CSS/Shorthand_properties
+_______________
+https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Responsive_Design
+https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=es-419Link
+https://chrome.google.com/webstore/detail/viewport-resizer-%E2%80%93-respon/kapnjjcfcncngkadhpmijlkblpibdcgm?hl=es-419
