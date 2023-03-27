@@ -4,3 +4,6 @@ document.getElementById(‘id’) selecciona el elemento por el id
 `document.getElementsByClassName(‘clase’) retorna un arreglo de los elementos por el nombre de la clase
 document.getElementsByTagName(‘tag’) retorna un arreglo de los elementos por el nombre del tag
 document.querySelectorAll(“selector”) regresa todos los elementos con el mismo nombre
+
+_______________ 
+en el inspeccionar en google en el parte del engraje puedo ver una opción llamada preservar log para mirar cada vez q le de agregar al botón el evento 
