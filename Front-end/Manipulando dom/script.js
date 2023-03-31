@@ -25,11 +25,14 @@ const createTask = (evento) => {
     titleTask.classList.add("task");
     titleTask.innerText = value;
     taskContent.appendChild(titleTask);
+    taskContent.appendChild(deleteIcon());
     const content = `
     
     </div>`; // backticks pego dentro de esas backticks el contenido del html del div q esta entre etiquetas comentariadas, se quita el hacer curso de DOM y se pone ---> $ {value}
     // 5ta parte clase 4 task.innerHTML = content; // 3ra parte clase 2, con esta propiedad innerHTML se le dice q guarde lo ingresado por el usuario
     task.appendChild(taskContent);
+
+    task.appendChild(deleteIcon());
 
     list.appendChild(task); // 4ta parte clase 2, agregar a la lista
  
@@ -57,5 +60,20 @@ const compleTask = (event) => {
 };
 
 // Immediately onvoked function expression IIFE : funciones cuando se declaran funcionan
+
+const deleteIcon =() => {
+  /*const content = `
+  <i class = "fas fa-trash-alt trashIcon icon"></i>`;*/
+  const i = document.createElement("i");  
+  i.classList.add("fas", "fa-trash-alt", "trashIcon", "icon"); // hace q se me repita al lado de las letras
+  i.addEventListener("click", deleteTask);
+  return i
+}
+
+const deleteTask = (evento) =>{
+  
+  const parent = evento.target.parentElement;
+  parent.remove();
+};
 
 })();
