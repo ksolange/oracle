@@ -17,3 +17,5 @@ Existen otros métodos que podemos utilizar para manipular nodos:
 insertBefore(padre, hijo): Coloca un nodo antes del otro
 replaceChild(elemento1, elemento2): Sustituye el nodo del elemento 1 por el nodo del elemento 2
 removeChild(elemento): Remueve un nodo del árbol
+
+_________ principios de la clase 5 se da un orden al script separandolo en componentes deleteIcon y checkComplete, cada uno con su debido export y en el script principal con su import.
