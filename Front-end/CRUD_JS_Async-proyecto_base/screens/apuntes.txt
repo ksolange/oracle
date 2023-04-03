@@ -1,0 +1,6 @@
+1. instalar node js 
+2. instalar paquete npm json-server
+3. --watch
+4. json-server --watch + nombre archivo
+5. url: http://localhost:3000/perfil
+6.developers.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise#parámetros  --------> promesas

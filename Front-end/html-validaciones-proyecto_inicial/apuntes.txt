@@ -1,0 +1,9 @@
+Utilizar reglas del regex dentro del atributo pattern para validar el campo de contraseña. https://regexlib.com/?AspxAutoDetectCookieSupport=1 ya q minlegth y maxlegth no se usan
+
+https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a
+
+__________________________-
+browser-sync start -s -f . --directory        (debo levantar un servidor http, para q funcione en la clase del 02 d Abril, pero antes debo quitar extensión live server y descargar el programa browser sync) https://browsersync.io/
+
+
+__________________________develop preview ship: 
