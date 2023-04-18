@@ -4,3 +4,38 @@
 4. json-server --watch + nombre archivo
 5. url: http://localhost:3000/perfil
 6.developers.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise#parámetros  --------> promesas
+
+
+
+___const promise = new Promise( (resolve,reject) => { // se puede manejar como un function o =>
+        const http = new XMLHttpRequest();
+        http.open("GET","http://localhost:3000/perfil"); //recibe 2 parámetros(1ro método y 2do la url)
+        
+        http.send(); //envía la repetición 
+        
+        http.onload = () => {    //una vez termine se inicia a usar esta función 
+            const response = JSON.parse(http.response); // JSON lo transforma 
+
+            if(http.status >= 400){ //existe un error
+                reject(response);
+            }else{
+                resolve(response); // este response se vuelve la data de abajo del listaClientes.then(data)
+            }
+                        
+            /*const http2 = new XMLHttpRequest();
+            http2.open("GET", "http://localhost:3000/perfil/hoy"); // ejemplo para saber los perfiles q se crearon hoy
+            http2.send();
+            http2.onload = () =>{
+                const data2 = JSON.parse(http2.response)
+            }*/    
+        };
+    })
+    return promise;
+
+
+
+    _______2 FEtch - aPI  -clase 05 refaactorizando responsabilidades: de fetch api
+
+    http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
+    
+    _importa código q alguien más ya uso: https://cdnjs.com/libraries/uuid
