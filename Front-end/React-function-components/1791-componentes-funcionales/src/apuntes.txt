@@ -1,6 +1,0 @@
-componentes funcionales: son una manera de poder crear componentes en React sin la necesidad de trabajar con clases.
-	- HOOKS: son funciones q controlan ese componente. 1. useState: podemos trabajar con estado de nuestro componente.
-							   2. useEffect: 
-							   3. useContext:
-							   4. librerías de hooks:
-							   5. tus propios hooks.
