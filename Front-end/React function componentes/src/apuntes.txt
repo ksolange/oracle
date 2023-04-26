@@ -7,3 +7,24 @@ _____
 Existen dos tipos diferentes de componentes en React, tanto los que son hechos con clase o bien con funciones							   5. tus propios hooks.
 - Los class components son una forma más antigua de escribir componentes en React.
 - Un componente funcional es más fácil de leer y normalmente requiere menos código que un componente de clase.
+
+__________ clase 7componentes, para recrear la pag web
+http://art.design/components/button/
+
+https://mui.com/
+https://ant.design/
+https://chakra-ui.com/
+https://react-bootstrap.github.io/
+
+
+______ clase 02 parte 3
+teoría de Uncontrolled Components
+https://legacy.reactjs.org/docs/uncontrolled-components.html 
+
+
+Controlled Components
+https://legacy.reactjs.org/docs/forms.html#controlled-components
+
+
+______ useState: verifica el estado del input
+useEffect: puede escuchar cambio o dependencias, permite ver el valor real d nuestro estado 
