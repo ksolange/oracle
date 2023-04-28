@@ -12,6 +12,31 @@ function FormSignUp ({handleSubmit}) {
     const [email, setEmail] = useState('');
     const [prom, setProm] = useState(true);
     const [nov, setNov] = useState(false);
+    const [errors, setErrors] = useState({
+        name:  {
+            error: false, // si cambio esta bandera por true  nos muestra el error y el color rojo
+            message: 'deBE TENeR 3'
+            // ese message puede funcionar = q e el helperText
+        },
+    })
+
+    function validarNombre(nombre){
+        if(nombre.length >= 3 ){
+            return { 
+                name : {
+                    error: false,
+                    message: '', 
+                },
+            }
+        }else{
+            return { 
+                name : { 
+                    error: true, 
+                    message: 'deBE TENeR 3', 
+                }, 
+            }
+        };
+    }
 
     return (
     <form 
@@ -39,6 +64,18 @@ function FormSignUp ({handleSubmit}) {
                 
             }}
             value = { name }
+            error = {errors.name.error} // llamo a errors de arriba, no me debe mostrar nada porq esta en false, pero si muestra debe enviarle un mensaje abajo ? si es != a false aparece el mensaje 
+            helperText = {
+                errors.name.error ? errors.name.message: ''
+            }
+            onBlur = { (e) => {
+                setErrors(
+                    validarNombre(
+                        e.target.value
+                    )
+                )
+                
+            }} 
         />
         <TextField
             id = "lastname" label = "Apellidos" 

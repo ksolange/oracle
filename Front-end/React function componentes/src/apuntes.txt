@@ -28,3 +28,9 @@ https://legacy.reactjs.org/docs/forms.html#controlled-components
 
 ______ useState: verifica el estado del input
 useEffect: puede escuchar cambio o dependencias, permite ver el valor real d nuestro estado 
+
+
+___________ la etiqueta o componente textField puede recibir las propiedades de error y helperText
+Propiedad de error en el componente TextField así como HelperText para indicar un mensaje de error
+https://www.npmjs.com/package/yup
+https://react-hook-form.com/
