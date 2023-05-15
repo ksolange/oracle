@@ -1,0 +1,17 @@
+Aplicación SPA: (ejecuta todo su contenido en una sola página) es un tipo de aplicación web donde todas las pantallas las muestra en la misma página, sin recargar el navegador.
+Técnicamente, una SPA es un sitio donde existe un único punto de entrada, generalmente el archivo index.html. 
+Varias vistas, no varias páginas
+Aunque solo tengamos una página, lo que sí tenemos en la aplicación son varias vistas, entendiendo por vista algo como lo que sería una pantalla en una aplicación de escritorio. En la misma página, por tanto, se irán intercambiando vistas distintas, produciendo el efecto de que tienes varias páginas, cuando realmente todo es la misma, intercambiando vistas.
+
+
+¿Cuál es la principal diferencia entre una aplicación tradicional y una single page application (SPA)?:
+Una aplicación single page application hace apenas una requisición para el servidor, que regresa un archivo html, y quien es responsable por exhibir el contenido son los componentes javascript. Ya una aplicación tradicional hace una requisición y recibe todo el archivo html de esa misma requisición.
+
+_______________________
+tiene q tener abierto dos terminales el visual con la ruta 
+y otro git bash con json-server --watch .\db.json --port=5
+y se le puede mencionar el puerto en el q deseo abrirle
+
+
+AXIOS: librería para hacer peticiones, para buscar información. 
+
