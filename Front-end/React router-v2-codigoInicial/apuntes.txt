@@ -9,7 +9,7 @@ Una aplicación single page application hace apenas una requisición para el ser
 
 _______________________
 tiene q tener abierto dos terminales el visual con la ruta 
-y otro git bash con json-server --watch .\db.json --port=5
+y otro git bash con json-server --watch .\db.json --port=5000
 y se le puede mencionar el puerto en el q deseo abrirle
 
 

@@ -3,6 +3,7 @@ import './assets/css/componentes/card.css';
 import Home from "./pages/Home.jsx";
 import Sobre from "./pages/Sobre.jsx";
 import Header from './components/Header.jsx';
+import Post from './pages/Post';
 
 import Page404 from './pages/Page404';
 
@@ -30,6 +31,7 @@ function App() {
           <Route path = '/sobre' element = {<Sobre />} />
           {/* cuando no exista el elemento buscado se puede hacer así
           <Route path = '*' element = {<h1>No existe </h1> } /> pero no es lo mejor, lo adecuado es crear una nueva page, en la siguiente línea está el ejemplo */}
+          <Route path = '/posts/:id' element = {<Post/>} />
           <Route path = '*' element = {<Page404 /> } />
         </Routes>
       </Router>
