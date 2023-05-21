@@ -5,6 +5,8 @@ import Sobre from "./pages/Sobre.jsx";
 import Header from './components/Header.jsx';
 import Post from './pages/Post';
 
+import Categoria from './pages/Categoria.jsx';
+
 import Page404 from './pages/Page404';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -32,6 +34,7 @@ function App() {
           {/* cuando no exista el elemento buscado se puede hacer así
           <Route path = '*' element = {<h1>No existe </h1> } /> pero no es lo mejor, lo adecuado es crear una nueva page, en la siguiente línea está el ejemplo */}
           <Route path = '/posts/:id' element = {<Post/>} />
+          <Route path='/categoria/:id/*' element={ <Categoria />}/> {/* me faltaba la < /> en Categoria */}
           <Route path = '*' element = {<Page404 /> } />
         </Routes>
       </Router>

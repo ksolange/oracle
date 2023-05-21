@@ -15,3 +15,6 @@ y se le puede mencionar el puerto en el q deseo abrirle
 
 AXIOS: librería para hacer peticiones, para buscar información. 
 
+
+hook useResolvedPath para crear caminos dinámicos.
+

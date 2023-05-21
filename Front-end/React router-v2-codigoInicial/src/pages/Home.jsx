@@ -1,5 +1,5 @@
 import ListPosts from "../components/ListPosts.jsx";
-
+import ListCategories from "../components/ListCategories.jsx"
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <div className="container">
         <h2 className="title-page">Pet noticias</h2>
       </div>
+      <ListCategories />
       <ListPosts url = {"/posts/"}/>
       {/*<section className="container flex flex--center">
         <article className="card post">

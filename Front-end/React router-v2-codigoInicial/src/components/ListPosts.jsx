@@ -23,9 +23,9 @@ const ListPosts = ({ url }) => {
                             <p className = "post-card__meta">{metadescription}</p>
                         </article>
                     </Link>                    
-                })
+                    }
+                )
             }
-
         </section>
     )
 }
