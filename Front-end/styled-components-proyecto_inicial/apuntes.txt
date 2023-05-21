@@ -1,0 +1,3 @@
+1ro tuve q instalar esto pero pero me dio lío, en una pag encontré la solución con la versión: npm install styled-components@5.3.10
+2do instale el pluggin de styled components
+3. para crear una carpeta y archivo al mismo tiempo este es el comando: ejemplo nombre carpeta Ul + / + archivo.js (UI/variables.js)
