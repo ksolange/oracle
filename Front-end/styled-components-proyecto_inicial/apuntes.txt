@@ -1,3 +1,10 @@
 1ro tuve q instalar esto pero pero me dio lío, en una pag encontré la solución con la versión: npm install styled-components@5.3.10
 2do instale el pluggin de styled components
 3. para crear una carpeta y archivo al mismo tiempo este es el comando: ejemplo nombre carpeta Ul + / + archivo.js (UI/variables.js)
+
+
+4. Siempre que sea posible debemos evitar de poner la declaración de componentes dentro del método render de los componentes basado en clases, y en el caso de componentes funcionales, no debemos declarar un componente dentro de otro.
+
+Eso porque, caso un componente está declarado dentro del método render, o, dentro de otro componente funcional, este será declarado otra vez a cada nueva renderización, y React no podrá hacer su cache, lo que podrá retrasar la renderización de la página.
+
+Por eso, recuerda de declarar tus componentes y styled components fuera de los métodos de renderización de React.
