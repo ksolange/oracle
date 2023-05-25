@@ -6,7 +6,7 @@ import Account from "../Account";
 import List from "../List/index.jsx";
 
 const StyledContainer = styled.div`
-  background-color: #f1f1f1;
+  background-color: ${({ theme }) => theme.body };// #f1f1f1; el body esta definido en el tema.js siendo fondoClaro y fondoOscuro
   min-height: 90vh;
   padding: 0px 15vw;
   @media (max-width: 800px) { 
