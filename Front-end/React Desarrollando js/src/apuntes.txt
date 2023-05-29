@@ -1,0 +1,1 @@
+descargo:  npm install react-icons --save
