@@ -1,1 +1,4 @@
 descargo:  npm install react-icons --save
+
+para finalizar y publicar la pag en la web: npm run build y luego npm install -g serve  (para la distribucióo en internet , luego dar) serve -s build, aparece un nueva carpeta build con nuevos archivos. 
+Vercel.com y desde git puedo unir 
