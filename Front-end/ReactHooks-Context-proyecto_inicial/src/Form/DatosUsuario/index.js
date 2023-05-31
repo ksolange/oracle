@@ -2,6 +2,21 @@ import React from "react";
 import { TextField, Button, Box } from "@mui/material";
 
 class DatosUsuario extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      email: {
+        value: 'karen',
+        valid: true
+      },
+      password: {
+        value: 'abc',
+        valid: true
+      }
+    }
+  }
+
   render() {
     return (
       <Box
@@ -22,6 +37,8 @@ class DatosUsuario extends React.Component {
           type="email"
           error={false}
           helperText={false && "Ingresa un correo electrónico válido"}
+          value = { this.state.email.value }
+          onChange = { (input) => this.setState({email:{value: input.target.value}}) } //12:01  no me reconoce el puerto 3005 buscar q hacer
         />
         <TextField
           label="Contraseña"
@@ -29,6 +46,8 @@ class DatosUsuario extends React.Component {
           fullWidth
           margin="dense"
           type="password"
+          value = {this.state.email.value}
+          onChange = { (input) => this.setState({password:{value: input.target.value}}) } //  no me reconoce el puerto 3005 buscar q hacer
         />
         <Button variant="contained" type="submit">
           Siguiente
