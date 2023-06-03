@@ -12,10 +12,11 @@ const ComponenteFuncion = () => {
   return <>Contenido</>  
 }
 */
-const DatosUsuario = () =>  {
-  const [email,setEmail] = useState({value: "Karen", valid: true})
+const DatosUsuario = ({ updateStep }) =>  {
+  const [email,setEmail] = useState({value: "",
+  valid: null})
 
-  const [password, setPassword] = useState({value: "abc", valid: true })
+  const [password, setPassword] = useState({value: "", valid: null })
 
   /*
   constructor(props){
@@ -45,7 +46,15 @@ const DatosUsuario = () =>  {
           flexDirection: "column",
         }}
         onSubmit = { (e) => {
-          this.setState ({ email: { value: input.target.value } })
+          e.preventDefault();
+          if(email.valid && password.valid){
+            console.log("Siguiente formulario");
+            console.log(email, password);
+            updateStep(1);
+          }else{
+            console.log(email, password);
+          }
+          //this.setState ({ email: { value: input.target.value } })
         } 
       }
       >
@@ -54,9 +63,10 @@ const DatosUsuario = () =>  {
           variant="outlined"
           fullWidth
           margin="dense"
+          // onBlur={() => validarEmail(email)}
           type="email"
-          error={false}
-          helperText={false && "Ingresa un correo electrónico válido"}
+          error={email.valid === false} 
+          helperText={email.valid === false && "Ingresa un correo electrónico válido"} //era true && si recibe un false no va a mostrar nada debe ser true  y de = forma puede escribirse así true ? "Ingresa....
           value = { email.value }
           onChange = { (input)  => {
             const email = input.target.value;
@@ -73,12 +83,14 @@ const DatosUsuario = () =>  {
           fullWidth
           margin="dense"
           type="password"
+          error={password.valid === false}
+          helperText={password.valid === false && "Inggresa una contraseña valida,  al menos 1 caracter &/"}
           value = {password.value}
           onChange = { (input) =>{
             const password = input.target.value;
             validarPassword(password)
             // opción 1 parte 2 setPassword({value: input.target.value, valid: true}) 
-            setPassword({value: input.target.value, valid: validarPassword(password)});
+            setPassword({value: password, valid: validarPassword(password)});
           }
            //  no me reconoce el puerto 3005 buscar q hacer
         }
