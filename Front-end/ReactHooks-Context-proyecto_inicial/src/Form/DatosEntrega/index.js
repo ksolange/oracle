@@ -7,7 +7,7 @@ const DatosEntrega = ( updateStep ) => {
 
   const [ address, setAddress ] = useState({ value: '', valid: null })
   const [ city, setCity] = useState({ value: '', valid: null })
-const [ province, setProvince ] = useState({ value: '', valid: null }) 
+  const [ province, setProvince ] = useState({ value: '', valid: null }) 
 
   return (
     <Box
